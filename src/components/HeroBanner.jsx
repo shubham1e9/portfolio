@@ -9,8 +9,10 @@ import { scrollTo } from "../helper";
 import { useFollowPointer } from "./useFollowPointer";
 
 const HeroBanner = () => {
+    
     const ref = useRef(null);
     const { x, y } = useFollowPointer(ref);
+
     return (
         <div
             id="hero"
@@ -23,6 +25,7 @@ const HeroBanner = () => {
             />
             <span className="hidden md:block sec-1-bg-gradient-2-desktop md:w-[1120px] 2xl:w-[1420px] md:h-[1119px] 2xl:h-[1419px] absolute left-[105px] top-[672px] md:top-[500px] 2xl:top-[672px]" />
             {/* BACKGROUND ELEMENTS FOR DESKTOP END */}
+            
 
             {/* BACKGROUND ELEMENTS FOR DESKTOP START */}
             <span className="md:hidden sec-1-bg-gradient-1-mobile absolute w-[212px] h-[211px] left-[285px] -top-[25px]" />
@@ -37,6 +40,7 @@ const HeroBanner = () => {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.7, delay: 0.25 }}
                 >
+                    
                     <div className="flex items-center gap-[6px]">
                         <div className="w-[35px] h-[35px] rounded-full bg-[#252525] flex justify-center items-center">
                             <img src={gmailIcon} alt="" className="w-[18px]" />
@@ -82,7 +86,7 @@ const HeroBanner = () => {
                     <h1 className="text-[50px] md:text-[120px] 2xl:text-[189px] leading-[50px] md:leading-[125px]  2xl:leading-[192px] font-oswald uppercase">
                         I Am A Creative
                         <br className="invisible md:visible" />
-                        Desi-gner
+                        Designer
                     </h1>
                 </motion.div>
                 {/* BIG HEADING END */}
@@ -107,37 +111,6 @@ const HeroBanner = () => {
                 </motion.div>
                 {/* INTRO END */}
 
-                {/* NUMBER BLOCK START */}
-                {/* <motion.div
-                    className="hidden md:flex gap-8 relative z-10"
-                    initial={{ y: 300, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.7, delay: 0.25 }}
-                >
-                    
-                    <div className="flex items-center gap-3">
-                        <div className="text-[80px] font-light">80+</div>
-                        <div className="leading-[22px]">
-                            SUCCESSFULLY
-                            <br />
-                            COMPLETED
-                            <br />
-                            PROJECTS
-                        </div>
-                    </div>
-                    
-                    <div className="flex items-center gap-3">
-                        <div className="text-[80px] font-light">15+</div>
-                        <div className="leading-[22px]">
-                            YEARS OF
-                            <br />
-                            EXPERIENCE
-                        </div>
-                    </div>
-                    
-                </motion.div> */}
-                {/* NUMBER BLOCK END */}
-
                 {/* PERSON BLOCK START */}
                 <motion.div
                     className="w-[300px] md:w-[360px] 2xl:w-[475px] absolute bottom-0 left-[50%] -translate-x-1/2"
@@ -147,10 +120,10 @@ const HeroBanner = () => {
                 >
                     <img src={man} alt="" />
 
-                    {/* HIRE ME BUTTON START */}
+                    {/* RESUME ME BUTTON START */}
                     <div
                         className="absolute top-[260px] -right-8 2xl:top-[240px] 2xl:-right-10 w-[120px] h-[120px] rounded-full bg-white/[0.6] flex flex-col justify-center items-center gap-2 backdrop-blur-sm cursor-pointer transition-transform scale-[0.65] md:scale-100 active:scale-[0.55] md:active:scale-90"
-                        onClick={() => scrollTo("contact")}
+                        onClick={() => window.open("https://drive.google.com/file/d/1FP2dS5ZgSgwBg_m6ISP69APfcQnNq6qw/view?usp=sharing", "_blank")}
                     >
                         <img
                             src={externalLinkIcon}

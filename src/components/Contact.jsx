@@ -4,9 +4,7 @@ import Wrapper from "./Wrapper";
 import Form from "./Form";
 import Div from "./Div";
 
-import ig from "../assets/instagram.png";
 import ig1 from "../assets/ig1.png";
-import tw from "../assets/twitter.png";
 import tw1 from "../assets/twitter (2).png";
 import hm from "../assets/home.png";
 import ph from "../assets/phone-call.png";

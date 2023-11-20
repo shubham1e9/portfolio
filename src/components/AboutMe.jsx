@@ -20,12 +20,12 @@ const AboutMe = () => {
             id="about"
             className="w-full py-[50px] md:py-[60px] bg-white text-black relative overflow-hidden"
         >
-            {/* BACKGROUND ELEMENTS START */}
             <span className="sec-2-bg-gradient" />
             <motion.img className="sec-2-p-e-1" style={{ y: y1 }} src={pe1} />
             <motion.img className="sec-2-p-e-2" style={{ y: y2 }} src={pe2} />
-            <a href="https://leetcode.com/shubhamkumarcse/" class="image-link">
-            <img className="sec-2-p-e-3" style={{ y: y2 }} src={leetcode} />
+            {/* Icons start */}
+            {/* <a href="https://leetcode.com/shubhamkumarcse/" class="image-link">
+                <img className="sec-2-p-e-3" style={{ y: y2 }} src={leetcode} />
             </a>
             <a href="https://auth.geeksforgeeks.org/user/shubhammuz110203/practice" class="image-link">
             <img className="sec-2-p-e-4" style={{ y: y2 }} src={gfg} />
@@ -38,8 +38,56 @@ const AboutMe = () => {
             </a>
             <a href="https://www.codingninjas.com/studio/profile/c88bda7c-89d2-45b2-8589-4c7f43ffd053" class="image-link">
                 <img className="sec-2-p-e-7" style={{ y: y2 }} src={cn} />
-            </a>
-            {/* BACKGROUND ELEMENTS END */}
+            </a> */}
+            <div className="flex flex-col md:flex-row items-center justify-center md:justify-between">
+        <a href="https://leetcode.com/shubhamkumarcse/" className="image-link">
+          <img
+            className="sec-2-p-e-3 mb-2 md:mb-0"
+            style={{ y: y2 }}
+            src={leetcode}
+            alt="Leetcode"
+          />
+        </a>
+        <a
+          href="https://auth.geeksforgeeks.org/user/shubhammuz110203/practice"
+          className="image-link"
+        >
+          <img
+            className="sec-2-p-e-4 mb-2 md:mb-0"
+            style={{ y: y2 }}
+            src={gfg}
+            alt="GeeksforGeeks"
+          />
+        </a>
+        <a href="https://www.codechef.com/users/ahambrahmaasmi" className="image-link">
+          <img
+            className="sec-2-p-e-5 mb-2 md:mb-0"
+            style={{ y: y2 }}
+            src={codechef}
+            alt="Codechef"
+          />
+        </a>
+        <a href="https://github.com/Shubham-kumar-iem" className="image-link">
+          <img
+            className="sec-2-p-e-6 mb-2 md:mb-0"
+            style={{ y: y2 }}
+            src={github}
+            alt="GitHub"
+          />
+        </a>
+        <a
+          href="https://www.codingninjas.com/studio/profile/c88bda7c-89d2-45b2-8589-4c7f43ffd053"
+          className="image-link"
+        >
+          <img
+            className="sec-2-p-e-7 mb-2 md:mb-0"
+            style={{ y: y2 }}
+            src={cn}
+            alt="Coding Ninjas"
+          />
+        </a>
+      </div>
+            {/* Icons end */}
 
             <Wrapper>
                 {/* HEADING START */}
