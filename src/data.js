@@ -29,53 +29,36 @@ export const projects = [
         name: "Elevate Your Game with our Sports Wear Store WebApp.",
         image: p1,
         tags: ["dashboard", "website"],
+        link: "https://redstoreshoppingcart.netlify.app/"
     },
     {
         name: "Seamless Weather Updates at Your Fingertips",
         image: p2,
         tags: ["dashboard", "website"],
+        link: "https://www.google.com/"
     },
     {
         name: "2048: Puzzling Perfection in Pixels",
         image: p3,
         tags: ["game"],
+        link: "https://4096-game.netlify.app/"
     },
     {
         name: "Random Password generator",
         image: p4,
         tags: ["website"],
+        link: "https://www.google.com/"
     },
     {
         name: "Currency Converter",
         image: p5,
         tags: ["website", "dashboard"],
+        link: "https://www.google.com/"
     },
     {
         name: "Guess The Number Game",
         image: p6,
         tags: ["game"],
-    },
-];
-
-export const achievements = [
-    {
-        id: 1,
-        year: 80,
-        description: "SUCCESSFULLY<br />COMPLETED<br />PROJECTS",
-    },
-    {
-        id: 2,
-        year: 15,
-        description: "YEARS OF<br />EXPERIENCE",
-    },
-    {
-        id: 3,
-        year: 25,
-        description: "TECHNOLOGIES",
-    },
-    {
-        id: 4,
-        year: 70,
-        description: "COMMUNITY<br />POSTS",
+        link: "https://www.google.com/"
     },
 ];

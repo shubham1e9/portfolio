@@ -53,10 +53,7 @@ const Portfolio = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 {projectData.map((item, index) => {
                     return (
-                        <Div
-                            key={index}
-                            className="flex flex-col gap-4 cursor-pointer"
-                        >
+                        <Div key={index} className="flex flex-col gap-4 cursor-pointer">
                             <div className="bg-black rounded-[20px] aspect-video overflow-hidden">
                                 <img
                                     src={item.image}
@@ -64,7 +61,7 @@ const Portfolio = () => {
                                 />
                             </div>
                             <div className="text-[17px] 2xl:text-[24px] text-[#CCCCCC] text-center">
-                                {item.name}
+                                <a href={item.link} target="_blank">{item.name}</a>
                             </div>
                         </Div>
                     );
