@@ -118,9 +118,9 @@ const HeroBanner = () => {
                     animate={{ y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <img src={man} alt="" />
+                    <img src={man} alt="" fetchpriority="high" />
 
-                    {/* RESUME ME BUTTON START */}
+                    {/* RESUME BUTTON START */}
                     <div
                         className="absolute top-[260px] -right-8 2xl:top-[240px] 2xl:-right-10 w-[120px] h-[120px] rounded-full bg-white/[0.6] flex flex-col justify-center items-center gap-2 backdrop-blur-sm cursor-pointer transition-transform scale-[0.65] md:scale-100 active:scale-[0.55] md:active:scale-90"
                         onClick={() => window.open("https://drive.google.com/file/d/1FP2dS5ZgSgwBg_m6ISP69APfcQnNq6qw/view?usp=sharing", "_blank")}
@@ -132,7 +132,7 @@ const HeroBanner = () => {
                         />
                         <div className="text-black">Resume</div>
                     </div>
-                    {/* HIRE ME BUTTON END */}
+                    {/* RESUME BUTTON END */}
                 </motion.div>
                 {/* PERSON BLOCK END */}
             </Wrapper>
